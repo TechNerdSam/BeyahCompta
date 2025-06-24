@@ -1,9 +1,6 @@
 ````markdown
 # 💰 BéyahCompta - Gestion Financière Épurée 💸
 
-![Banner Image](https://via.placeholder.com/1200x300?text=BéyahCompta+-+Votre+Gestionnaire+Financier+Simplifié)
-*(Image de bannière générique - à remplacer par un véritable aperçu de l'application)*
-
 ## Table des Matières
 1.  [🌟 Introduction](#-introduction)
 2.  [✨ Fonctionnalités Clés](#-fonctionnalités-clés)
