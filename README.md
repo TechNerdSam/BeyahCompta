@@ -1,5 +1,3 @@
-Voici une documentation complète, professionnelle et étoffée pour votre fichier `README.md`, avec des emojis, basée sur le code source de `BeyahCompta.java`.
-
 ````markdown
 # 💰 BéyahCompta - Gestion Financière Épurée 💸
 
