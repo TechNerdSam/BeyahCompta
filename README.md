@@ -1,146 +1,143 @@
-````markdown
-# 💰 BéyahCompta - Gestion Financière Épurée 💸
+# 📊 BEYAH-COMPTA : L'OS Financier de Votre Empire
 
-## Table des Matières
-1.  [🌟 Introduction](#-introduction)
-2.  [✨ Fonctionnalités Clés](#-fonctionnalités-clés)
-3.  [💻 Technologies Utilisées](#-technologies-utilisées)
-4.  [🚀 Démarrage Rapide](#-démarrage-rapide)
-    * [Prérequis](#prérequis)
-    * [Compilation](#compilation)
-    * [Exécution](#exécution)
-5.  [📂 Structure du Projet](#-structure-du-projet)
-6.  [🛠️ Utilisation de l'Application](#️-utilisation-de-lapplication)
-    * [Gestion des Transactions](#gestion-des-transactions)
-    * [Rapports Financiers](#rapports-financiers)
-    * [Gestion Budgétaire](#gestion-budgétaire)
-7.  [⚙️ Personnalisation (Développeurs)](#️-personnalisation-développeurs)
-8.  [🤝 Contribution](#-contribution)
-9.  [📄 Licence](#-licence)
-10. [📞 Contact](#-contact)
+[](https://www.google.com/search?q=https://github.com/TechNerdSam/beyahcompta)
+[](https://www.java.com/)
+[](https://monblog-sa-abasse.blogspot.com/)
+[](https://opensource.org/licenses/MIT)
 
-## 🌟 Introduction
+> *"La comptabilité n'est pas de la saisie de données. C'est l'art de lire le passé pour dominer le futur."*
 
-BéyahCompta est une application de gestion financière intuitive et épurée, conçue pour vous aider à suivre vos transactions, gérer vos soldes de compte et maîtriser votre budget avec une efficacité remarquable. Oubliez la complexité des feuilles de calcul et des logiciels surchargés. BéyahCompta offre une interface utilisateur propre et conviviale, se concentrant sur l'essentiel pour une expérience de gestion financière agréable et sans tracas. 🧘‍♀️📊
-
-Que vous soyez un particulier souhaitant suivre ses dépenses quotidiennes ou une petite entreprise gérant ses flux de trésorerie, BéyahCompta est l'outil qu'il vous faut pour une visibilité claire de votre santé financière. 💖
-
-## ✨ Fonctionnalités Clés
-
-* **Ajout, Modification et Suppression de Transactions** : Gérez facilement vos débits et crédits avec des champs clairs pour le compte, le type, la catégorie, la description et le montant. ➕✏️🗑️
-* **Filtrage et Recherche Intelligents** : Trouvez rapidement des transactions spécifiques par type, catégorie ou texte dans la description ou le compte. 🕵️‍♀️🔍
-* **Synthèse des Soldes de Compte** : Visualisez instantanément les soldes de vos comptes (`Caisse`, `Banque`, `Épargne` par défaut) et un solde global agrégé. 🏦
-* **Rapports Financiers Détaillés** : Obtenez un aperçu clair de vos totaux de crédits et débits, ainsi qu'un résumé budgétaire par catégorie. 📈
-* **Visualisation des Dépenses par Catégorie** : Un graphique circulaire interactif (Pie Chart) vous montre où va votre argent, facilitant l'identification des domaines de dépenses majeurs. 🥧
-* **Gestion des Budgets par Catégorie** : Définissez et suivez des budgets pour chaque catégorie de dépenses, avec un indicateur visuel lorsque les limites sont dépassées. 🎯
-* **Exportation CSV** : Exportez toutes vos transactions vers un fichier CSV pour une analyse plus approfondie ou pour l'intégration avec d'autres outils. 📥
-* **Persistance des Données** : Toutes vos données sont automatiquement sauvegardées et chargées au démarrage, assurant qu'aucune information n'est perdue. 💾
-* **Expérience Utilisateur Agréable** : Basé sur Swing, avec un design inspiré de Material Design et des effets de survol pour une interaction fluide. 🎨
-
-## 💻 Technologies Utilisées
-
-* **Java (JDK 8+)** : Langage de programmation principal. ☕
-* **Swing** : Toolkit graphique pour le développement de l'interface utilisateur. 🖼️
-* **Sérialisation d'Objets Java** : Pour la persistance des données. 🔄
-* **`java.time` (API Date & Time)** : Pour la gestion moderne des dates. 🗓️
-* **`NumberFormat`** : Pour un formatage monétaire et numérique localisé (français). 💶
-
-## 🚀 Démarrage Rapide
-
-Suivez ces étapes pour compiler et exécuter BéyahCompta sur votre machine locale.
-
-### Prérequis
-Assurez-vous d'avoir le **Java Development Kit (JDK) version 8 ou supérieure** installé sur votre système. Vous pouvez le télécharger depuis le site officiel d'Oracle ou utiliser une distribution OpenJDK.
-
-### Compilation
-1.  **Clonez le dépôt** (ou téléchargez le fichier `BeyahCompta.java`) :
-    ```bash
-    git clone [https://github.com/technerdsam/BeyahCompta.git](https://github.com/votre_utilisateur/BeyahCompta.git)
-    cd BeyahCompta/BéyahCompta # Assurez-vous d'être dans le bon répertoire
-    ```
-    *(Remarque: Ajustez le chemin si votre structure de dossiers est différente.)*
-
-2.  **Compilez les fichiers source** :
-    Ouvrez un terminal ou une invite de commande dans le répertoire où se trouvent `BeyahCompta.java`, `Transaction.java`, `TransactionType.java`, `TransactionCategory.java` et `PieChartPanel.java` (si elles sont séparées).
-    ```bash
-    javac BeyahCompta.java
-    ```
-    *(Le compilateur Java détectera et compilera automatiquement les classes internes et les enums si elles sont correctement définies au sein de `BeyahCompta.java` ou dans des fichiers séparés dans le même répertoire.)*
-
-### Exécution
-Après la compilation réussie, exécutez l'application :
-
-```bash
-java BeyahCompta
-````
-
-L'application BéyahCompta devrait alors se lancer et sa fenêtre principale devrait apparaître. 🎉
-
-## 📂 Structure du Projet
-
-```
-.
-├── BeyahCompta.java        # Fichier source principal de l'application
-├── BeyahComptaData/        # Répertoire de données (créé automatiquement)
-│   ├── transactions.ser    # Fichier sérialisé des transactions
-│   ├── data.ser            # Fichier sérialisé des soldes de comptes et budgets
-│   ├── transactions.ser.bak# Sauvegarde des transactions
-│   └── data.ser.bak        # Sauvegarde des soldes de comptes et budgets
-└── README.md               # Ce document
-```
-
-*(Note: Si `Transaction`, `TransactionType`, `TransactionCategory`, et `PieChartPanel` sont dans des fichiers `.java` séparés, ils devraient se trouver au même niveau que `BeyahCompta.java`.)*
-
-## 🛠️ Utilisation de l'Application
-
-### Gestion des Transactions
-
-  * **Ajouter une transaction** : Utilisez les champs de saisie dans le panneau de gauche pour entrer les détails (Compte, Type, Catégorie, Description, Montant) et cliquez sur "Ajouter Transaction".
-  * **Modifier une transaction** : Sélectionnez une ligne dans le tableau des transactions et cliquez sur le bouton "Modifier". Une boîte de dialogue s'ouvrira pour vous permettre de mettre à jour les détails.
-  * **Supprimer une transaction** : Sélectionnez une ligne dans le tableau et cliquez sur le bouton "Supprimer". Une confirmation vous sera demandée.
-  * **Filtrer/Rechercher** : Utilisez les listes déroulantes "Filtrer par" et le champ "Rechercher" pour affiner l'affichage des transactions dans le tableau.
-
-### Rapports Financiers
-
-Accédez à l'onglet "Rapports" pour voir :
-
-  * Le total des crédits et des débits.
-  * Les soldes individuels pour chaque compte.
-  * Un résumé des dépenses par catégorie comparé à votre budget.
-  * Un graphique circulaire visualisant vos dépenses par catégorie.
-
-### Gestion Budgétaire
-
-Dans l'onglet "Rapports", cliquez sur le bouton "Gérer les Budgets" pour définir ou ajuster les montants budgétés pour chaque catégorie de dépenses.
-
-## ⚙️ Personnalisation (Développeurs)
-
-  * **Constantes** : Modifiez les constantes au début de la classe `BeyahCompta` pour changer les titres, noms de fichiers, comptes par défaut, catégories, ou textes d'interface.
-  * **Couleurs et Polices** : Les variables de couleur et de police (`PRIMARY_COLOR`, `FONT_NAME`, etc.) sont définies pour une personnalisation facile de l'apparence.
-  * **Catégories et Types** : Les `enum` `TransactionType` et `TransactionCategory` peuvent être étendues pour ajouter de nouveaux types ou catégories de transactions selon vos besoins.
-  * **Localisation** : Le formatage des devises utilise `Locale.FRANCE` (`Euro`). Vous pouvez ajuster cela pour d'autres locales.
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues \! Si vous souhaitez améliorer BéyahCompta, n'hésitez pas à :
-
-1.  Faire un fork du dépôt.
-2.  Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`).
-3.  Commiter vos changements (`git commit -m 'Add some AmazingFeature'`).
-4.  Pousser vers la branche (`git push origin feature/AmazingFeature`).
-5.  Ouvrir une Pull Request.
-
-## 📄 Licence
-
-Ce projet est sous licence Creative Commons. Voir le fichier `LICENSE` pour plus de détails. 📜
-
-## 📞 Contact
-
-Samyn-Antoy ABASSE - [Email](mailto:samynantoy@gmail.com) - https://github.com/TechNerdSam
+Bienvenue sur **BeyahCompta**. Plus qu'un logiciel, c'est une **architecture de précision financière**. Conçu en Java natif pour une résilience à toute épreuve, ce système offre une clarté totale sur vos flux de trésorerie (Bilan, Compte de Résultat, Grand Livre) sans la latence des solutions cloud gonflées.
 
 -----
 
-Made with ❤️ for efficient financial management.
+## 🚀 SAMYN-ANTOY : Architecte Growth & Tech Augmentée par l'IA
 
+**L'alliance du Code, de la Stratégie et du Design pour propulser votre business.**
+
+Dans l'arène digitale de 2025, je ne code pas seulement des outils. Je bâtis des avantages compétitifs déloyaux.
+
+### ⚡ EXPERTISE À HAUT IMPACT
+
+  * **💻 Dév Nouvelle Génération :** Développement assisté par IA (Prompt-to-Code) • SysAdmin • Infrastructures Robustes & Scalables.
+  * **📈 Croissance & Ads :** Stratégies d'Acquisition Agressives • Marketing Digital 360° • Data Science appliquée au Growth.
+  * **🎨 Visuels & Créa :** Photographie IA • Publicités à Haute Conversion (Creative Strategist).
+
+-----
+
+## 👇 PASSEZ À LA VITESSE SUPÉRIEURE (Zone d'Opportunité)
+
+L'information est le nouveau pétrole. L'exécution est le moteur. Rejoignez l'élite.
+
+### 💼 Collaborons ensemble
+
+Accédez à mes modèles mentaux, mes audits et mes stratégies de domination de marché.
+👉 **[Le Blog Tech Pro de Samyn-Antoy ABASSE](https://monblog-sa-abasse.blogspot.com/)**
+
+### 🧢 LA BOUTIQUE OFFICIELLE
+
+Rejoignez le mouvement. Portez la vision. L'uniforme des créateurs du Top 1%.
+🛒 **[Accès Exclusif : Mon Store Créateur Fourthwall](https://samynantoyabasse-shop.fourthwall.com)**
+
+-----
+
+## 💎 MON ARSENAL & LIFESTYLE 2025
+
+La performance est une équation : `(Outils + Environnement) x Mental`. Voici les variables que j'optimise pour rester au sommet.
+
+| Catégorie | L'Arme Secrète | Le Levier de Performance | Lien d'Acquisition |
+| :--- | :--- | :--- | :--- |
+| **📱 Tech Mobile** | **iPhone 16** | Puissance Pure. Le QG mobile pour piloter l'empire en temps réel. | [**Commander la Puissance**](https://amzn.to/4ivKTuW) |
+| **🧱 Focus Créatif** | **LEGO Star Wars** | "Deep Work" tactile. Reconstruction neuronale par l'assemblage complexe. | [**Booster ma Créativité**](https://amzn.to/44FrP7N) |
+| **⚡ Santé & Énergie** | **Air Fryer** | Bio-hacking culinaire. Nutrition haute performance sans friction temporelle. | [**Optimiser l'Énergie**](https://amzn.to/48AECcZ) |
+
+*(Liens affiliés - Investissez dans votre écosystème de réussite)*
+
+-----
+
+## 🏗️ Architecture & Fonctionnalités (Le Moteur)
+
+Ce projet est une démonstration de force en **Java Swing**. Il prouve qu'une interface desktop native reste la solution ultime pour la réactivité et la sécurité des données sensibles.
+
+### ⚙️ Modules Stratégiques
+
+Le code source (`BeyahCompta.java`) intègre les piliers de la gestion d'entreprise :
+
+  * **🔐 Authentification Sécurisée :** Système de login robuste pour protéger l'intégrité des données financières.
+  * **📊 Tableau de Bord Décisionnel :** Visualisation claire des écritures comptables via des `JTable` dynamiques.
+  * **🧮 Intelligence Comptable :**
+      * **Journal & Grand Livre :** Traçabilité absolue de chaque centime.
+      * **Balance & Bilan :** Calculs automatisés des Actifs/Passifs pour une vision instantanée de la santé de l'entreprise.
+      * **Compte de Résultat :** Analyse immédiate de la rentabilité.
+  * **💾 Persistance & Saisie :** Interface ergonomique pour la saisie rapide d'écritures (Débit/Crédit) avec validation automatique de l'équilibre.
+
+-----
+
+## 🚀 Protocole de Déploiement
+
+Transformez ce code en outil de gestion actif immédiatement.
+
+### 1\. Prérequis Système
+
+  * **JDK 8+** (Java Development Kit) - Le moteur d'exécution.
+  * Votre IDE favori (VS Code, IntelliJ, Eclipse). *Configuration VS Code incluse dans `.vscode/settings.json`*.
+
+### 2\. Initialisation
+
+```bash
+# Clonez l'intelligence du code
+git clone https://github.com/TechNerdSam/beyahcompta.git
+
+# Accédez au répertoire
+cd beyahcompta
 ```
+
+### 3\. Compilation et Lancement
+
+Compilez le fichier source principal :
+
+```bash
+javac BéyahCompta/BeyahCompta.java
+java BéyahCompta.BeyahCompta
 ```
+
+-----
+
+## 🗺️ Roadmap (Vision Future)
+
+La stagnation est l'ennemi. Voici comment nous allons scaler ce projet :
+
+  * [ ] **IA Prédictive :** Intégration de modèles ML pour anticiper les flux de trésorerie.
+  * [ ] **Connecteurs API :** Synchronisation bancaire automatique (PSD2).
+  * [ ] **Reporting Avancé :** Génération de PDF graphiques pour les présentations investisseurs.
+
+-----
+
+## 🤝 Contribution (Cercle d'Élite)
+
+Le code Open Source est un multiplicateur de force. Vous avez une optimisation algorithmique ou une nouvelle fonctionnalité UI ?
+
+1.  **Forkez** le projet.
+2.  **Créez** votre branche (`git checkout -b feature/OptimizationAlpha`).
+3.  **Commitez** (`git commit -m 'Upgrade: Algorithme de Bilan'`).
+4.  **Pushez** (`git push origin feature/OptimizationAlpha`).
+5.  **Ouvrez** une Pull Request.
+
+-----
+
+## 📜 Licence
+
+Distribué sous la licence MIT. Liberté totale pour ceux qui osent construire. Voir le fichier `LICENSE`.
+
+-----
+
+### ✍️ Contact & Réseau
+
+**TechNerdSam (Samyn-Antoy ABASSE)**
+
+  * **Email Stratégique :** [samynantoy@gmail.com](mailto:samynantoy@gmail.com)
+  * **QG GitHub :** [TechNerdSam](https://github.com/TechNerdSam)
+
+-----
+
+*Propulsé par la vision de Samyn-Antoy. Codez pour dominer.*
